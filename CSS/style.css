@@ -1,0 +1,101 @@
+/* keseluruhan badan websiteny*/
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* header bagian atas */
+.main-header {
+    display: flex;
+    justify-content: space-between; /* Memisahkan logo di kiri dan navigasi di kanan */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    background-color: azure;
+    padding: 15px 70px; /* Memberikan ruang pada sisi kiri dan kanan header */
+    position:relative;
+}
+
+.logo-icon img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 16px; /* Memberikan jarak antara setiap link */
+}
+
+nav a {
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: lightgray; /* Efek hover */
+}
+
+
+/* hero sections */
+.judul{
+    padding: 150px 150px;
+    gap: 8px;
+}
+
+.judul h1{
+    font-size: 40px;
+    padding: 15px 0px; 
+}
+
+.banner-img{
+    border: 1px solid black;
+    height: 650px;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0YUD8DiCrr6KMdajSEQ56djYQVpNYXpH4YBIyMwYbKf6qrpLPj__VDTavpnsnn1ddYl5LjxGT08EBrX-PLcHvq7rYvWsxrdxbNT5lPr4cBIFr2F7GmAb6OlG3p1HOyFbz-r6ie_UClL7s/w1200-h630-p-k-no-nu/gallery6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* about me */
+.about-me{
+    padding: 130px 75px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.about-me h1{
+    font-size: 45px;
+}
+
+.about-me h2{
+    font-size: 30px;
+}
+
+.about-me p{
+    padding-top:15px;
+    width: 500px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.content1 img{
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* portofolio */
+
+/* experience */
+
