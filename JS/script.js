@@ -6,14 +6,12 @@
 //     document.getElementById("name").innerHTML = name
 // }
 
-// addEventListener dia akan mendengarkan event apapun yang terjadi dalam html. Setiap di click dia akan menjelaskan sebuah function
+// // addEventListener dia akan mendengarkan event apapun yang terjadi dalam html. Setiap di click dia akan menjelaskan sebuah function
 // document.getElementById("gantinama").addEventListener("click" , function() {
 //     replaceName();
 // })
 
-
-//
-
+// fungsi buat nama
 function validateForm() {
     const nama = document.forms['message-form']['name-input'].value
     const angka = 11
@@ -34,3 +32,30 @@ function setName(name) {
     document.getElementById("name").innerHTML = name;
     document.getElementById('error-name').innerHTML = "";
 }
+
+//fungsi buat geser-geser foto
+let slideIndex = 0; // Indeks slide dimulai dari 0
+
+const changeSlide = (n) => {
+    showDivs((slideIndex += n));
+};
+
+const showDivs = (n) => {
+    const imgList = document.getElementsByClassName("slideshow");
+    if (n >= imgList.length) slideIndex = 0; // Kembali ke awal
+    if (n < 0) slideIndex = imgList.length - 1; // Ke akhir
+    for (let i = 0; i < imgList.length; i++) {
+        imgList[i].style.display = "none"; // Sembunyikan semua gambar
+    }
+    imgList[slideIndex].style.display = "block"; // Tampilkan gambar aktif
+};
+
+// Inisialisasi untuk menampilkan gambar pertama
+document.addEventListener("DOMContentLoaded", () => {
+    showDivs(slideIndex);
+});
+
+// Slideshow otomatis
+setInterval(() => {
+    changeSlide(1);
+}, 3000); // Ganti setiap 3 detik
