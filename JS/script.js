@@ -11,6 +11,19 @@
 //     replaceName();
 // })
 
+
+// pakai kode baris ini, jika ingin disambut alert dulu baru output web nya
+// let name = prompt("siapakah anda?", "");
+// document.getElementById("name").innerHTML = name
+
+// let nameinput = document.getElementById('name-input')
+
+// document.getElementById('submit').addEventListener("click" , function() {
+//     const nama = nameinput.value
+
+//     document.getElementById('name').innerHTML = nama
+// })
+
 // fungsi buat nama
 function validateForm() {
     const nama = document.forms['message-form']['name-input'].value
@@ -58,4 +71,4 @@ document.addEventListener("DOMContentLoaded", () => {
 // Slideshow otomatis
 setInterval(() => {
     changeSlide(1);
-}, 3000); // Ganti setiap 3 detik
+}, 3000); // Ganti setiap 3 detik

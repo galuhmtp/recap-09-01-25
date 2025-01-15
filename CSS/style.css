@@ -58,13 +58,21 @@ button a{
 
 /* hero sections */
 .judul{
-    padding: 150px 150px;
+    padding: 270px 150px;
     gap: 8px;
 }
 
 .judul h1{
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -50px;
     padding: 15px 0px; 
+}
+
+.judul span{
+    color: red;
+    font-size: 75   px;
+    font-weight: bolder;
 }
 
 
@@ -76,7 +84,7 @@ form input{
 .banner-img {
     position: relative;
     max-width: 100%; /* Sesuaikan dengan kebutuhan */
-    height: 500px; /* Atur tinggi gambar */
+    height: 700px; /* Atur tinggi gambar */
     overflow: hidden;
     margin: 20px auto;
 }
@@ -99,13 +107,18 @@ form input{
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 10%;
     cursor: pointer;
     z-index: 10;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .banner-img button:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Efek hover */
 }
+
+
 
 /* Tombol sebelumnya */
 .banner-img button:first-child {
@@ -118,64 +131,183 @@ form input{
 }
 
 
-
-
-
-/* about me */
-@media only screen and (max-width: 600px) {
-    .about-me {
-        flex-direction: column; /* Susun elemen secara vertikal */
-        align-items: center;   /* Pusatkan konten */
-        padding: 50px 20px;   /* Sesuaikan padding */
-        gap: 40px;            /* Tambahkan jarak antar elemen */
-    }
-
-    .about-me h1 {
-        font-size: 30px; /* Sesuaikan ukuran font untuk layar kecil */
-    }
-
-    .about-me h2 {
-        font-size: 24px; /* Sesuaikan ukuran font untuk subjudul */
-    }
-
-    .about-me p {
-        width: 100%;       /* Penuhi lebar layar */
-        text-align: center; /* Rata tengah untuk teks */
-        font-size: 16px;   /* Sesuaikan ukuran teks */
-    }
-
-    .content1 img {
-        width: 200px; /* Perkecil ukuran gambar */
-    }
-}
-
-.about-me{
-    padding: 130px 75px;
+/* about Me */
+.about-me {
+    padding: 170px 75px;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-between; /* Jarak antar elemen */
+    gap: 50px; /* Tambahkan jarak antar teks & gambar */
 }
 
-.about-me h1{
+.about-me .text {
+    flex: 1; /* Teks akan memenuhi sisa ruang */
+    max-width: 600px; /* Batasi lebar teks */
+}
+
+.about-me h1 {
     font-size: 45px;
 }
 
-.about-me h2{
+.about-me h2 {
     font-size: 30px;
 }
 
-.about-me p{
-    padding-top:15px;
-    width: 500px;
+.about-me p {
+    padding-top: 15px;
     text-align: justify;
     font-size: 18px;
 }
 
-.content1 img{
+.content1 {
+    flex: 1; /* Gambar akan menyesuaikan */
+    display: flex;
+    justify-content: center;
+}
+
+.content1 img {
     width: 300px;
     border-radius: 50%;
 }
 
+/* Responsif untuk layar kecil */
+@media only screen and (max-width: 600px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .about-me .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-me p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .content1 img {
+        width: 200px;
+    }
+}
+
+
 /* portofolio */
+.bahasa{
+    display: flex;
+    gap: 20px;
+}
+
+.porto{
+    padding: 125px 70px;
+    background-color: aqua;
+}
+
+.porto span{
+    font-size: 50px;
+}
+
+.porto h1{
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.html{
+    width: 250px;
+    padding: 30px 35px;
+    background-color: bisque;
+    margin: 0 auto;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+.html p{
+    text-align: justify;
+}
+
+.html img{
+    display: block;  
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.html h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.css{
+    width: 250px;
+    padding: 30px 35px;
+    margin: 0 auto;
+    background-color: bisque;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.css p{
+    text-align: justify;
+}
+.css img{
+    display: block;  
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.css h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.js{
+    width: 250px;
+    padding: 30px 35px;
+    background-color: bisque;
+    margin: 0 auto;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.js p{
+    text-align: justify;
+}
+.js img{
+    display: block;  
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.js h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.php{
+    width: 250px;
+    padding: 30px 35px;
+    background-color: bisque;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    
+}
+.php p{
+    text-align: justify;
+}
+.php img{
+    display: block;  
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.php h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
 
 /* experience */
+.experience{
+    padding: 125px 70px;
+}

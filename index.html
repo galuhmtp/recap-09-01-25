@@ -12,13 +12,13 @@
 <body>
     <!-- logo & nav -->
     <header class="main-header">
-        <img src="https://media.stickerswiki.app/ucokmauayang/606365.512.webp" style="width: 50px; border-radius:50% ;" class="logo" alt="">
-        <div class="menu">
-            <button><a href="">Home</a></button>
-            <button><a href="" id="#about-me">My Profile</a></button>
-            <button><a href="" id="#portofolio">Portofolio</a></button>
-            <button><a href="" id="#contact">Messsage Us</a></button>
-        </div>
+        <a href="#"><img src="https://media.stickerswiki.app/ucokmauayang/606365.512.webp" style="width: 50px; border-radius:50% ;" class="logo" alt=""></a>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#about-me">My Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#contact">Message Us</a>
+        </nav>
     </header>
 
     <hr>
@@ -28,76 +28,74 @@
         <!-- Hero Section -->
         <section>
             <header class="judul">
-                <h1>Hello, <span id="name">-</span> !<br>  Welcome to my Portofolio</h1>
+                <h1>Hello, <span id="name">-</span> !<br> Welcome to my Portofolio</h1>
 
                 <form action="" name="message-form" onsubmit="return validateForm()">
                     <input type="text" placeholder="nama anda" id="name-input" name="name-input">
                     <button id="submit" type="submit">Kirim</button>
                     <p id="error-name"></p>
                 </form>
-            
+
                 <script src="JS/script.js"></script>
             </header>
 
             <div class="banner-img">
-                <img class="slideshow" src="https://img.freepik.com/premium-photo/programming-background-with-person-working-with-codes-computer_23-2150010150.jpg" alt="Slide 1">
-                <img class="slideshow" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8fHww" alt="Slide 2">
-                <img class="slideshow" src="https://img.pikbest.com/wp/202408/program-code-web-development-concept-3d-illustrated-programming-and-coding_9836948.jpg!sw800" alt="Slide 3">
-                <button onclick="changeSlide(-1)">Previous</button>
-                <button onclick="changeSlide(1)">Next</button>
+                <img class="slideshow"
+                    src="https://img.freepik.com/premium-photo/programming-background-with-person-working-with-codes-computer_23-2150010150.jpg"
+                    alt="Slide 1">
+                <img class="slideshow"
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8fHww"
+                    alt="Slide 2">
+                <img class="slideshow"
+                    src="https://img.pikbest.com/wp/202408/program-code-web-development-concept-3d-illustrated-programming-and-coding_9836948.jpg!sw800"
+                    alt="Slide 3">
+                <button onclick="changeSlide(-1)">&laquo;</button>
+                <button onclick="changeSlide(1)">&raquo;</button>
             </div>
-            
+
         </section>
 
         <!-- About Me -->
-        <section class="about-me">
-            <header id="about-me">
+        <section class="about-me" id="about-me">
+            <div class="text">
                 <h1>Hello I'm</h1>
                 <h2>Galuh Maheswara Tahta Panditha</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum blanditiis unde
-                    dolorum enim velit commodi asperiores, itaque assumenda odio, nihil quasi suscipit, aliquid nulla
-                    deleniti ipsum iste sequi voluptates?
+                    Saya merupakan seorang siswa pelajar SMK kelahiran Desember 2007 yang tepat bersekolah di SMK Negeri
+                    1 Kota Depok, Jawa Barat.
+                    Saya memiliki hobi bermain game, menonton video klip sejarah, dan mendengarkan musik. Saya memiliki
+                    ketertarikan dalam coding sejak
+                    awal kelas 10. Saya mulai belajar HTML dan CSS pada tahun 2023 dan mulai benar-benar memahaminya
+                    pada pertengahan 2024.
+                    Saya mengikuti kursus ini karena diajak oleh "my soulmate" yang membawa saya ke dalam kursus RevoU
+                    ini. Saya sangat senang dan bersemangat
+                    agar saya bisa mendapatkan ilmu JavaScript lebih dalam lagi dan mendapatkan sertifikat yang bisa
+                    saya pamerkan di akun LinkedIn saya
+                    untuk melamar pekerjaan saat saya sudah lulus nanti.
                 </p>
-            </header>
+            </div>
 
             <div class="content1">
-                <img src="galuh(2).jpg" alt="">
+                <img src="galuh(2).jpg" alt="Galuh Maheswara">
             </div>
         </section>
+
 
         <!-- Portofolio -->
-        <section>
-            <header id="portofolio">
-                <h2>Portofolio</h2>
-            </header>
-
-            <!-- <div class="content"></div> -->
-        </section>
-
-        <!-- Experience -->
-        <section>
-            <h1>My Experience</h1>
-
-            <div class="pendidikan">
-                <h2>Sekolah</h2>
-                <div>
-                    <h2>SMKN 1 DEPOK</h2>
-                    <img src="https://i.ytimg.com/vi/XgAqNQfLY4o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCwqtdcnJ18dcSLcoM42Ufa8F2qbg" alt="">
-                    <p>Saya bersekolah di smk negeri 1 depok pada tahun 2023 dengan memilih jurusan PPLG (Perancang Perangkat Lunak Dan Gim). 
-                        Di tahun ini saya menginjak kelas 11. Di umur saya yang ke-17 tahun ini saya menjadi lebih produktif lagi terutama dalam mapel
-                        paling penting bagi saya yaitu produkti pplg. Di sekolah saat ini saya mempelajari bahasa  </p>
-                </div>
-            </div>
-
+        <section id="portofolio" class="porto">
+            <h1><span> My Portofolio </span> <br> Bahasa Pemrograman Yang di Kuasai</h1>
             <div class="bahasa">
+                <center>
+
+                </center>
                 <div class="html">
                     <img src="https://cdn-icons-png.flaticon.com/128/1051/1051328.png" alt="">
 
                     <div>
                         <h2>HTML</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente architecto magnam placeat
-                            quae adipisci dolore asperiores provident, laborum qui vel tempore, sunt neque excepturi molestiae! Accusamus!</p>
+                            quae adipisci dolore asperiores provident, laborum qui vel tempore, sunt neque excepturi
+                            molestiae! Accusamus!</p>
                     </div>
                 </div>
                 <div class="css">
@@ -105,8 +103,10 @@
 
                     <div>
                         <h2>CSS</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, deserunt enim tenetur rem pariatur impedit, 
-                            consectetur temporibus consequatur omnis est nemo inventore repellendus vel tempore voluptatem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, deserunt enim tenetur
+                            rem pariatur impedit,
+                            consectetur temporibus consequatur omnis est nemo inventore repellendus vel tempore
+                            voluptatem.</p>
                     </div>
                 </div>
                 <div class="js">
@@ -114,7 +114,8 @@
 
                     <div>
                         <h2>JavaScript</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quis quam optio tenetur voluptate modi 
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quis quam optio tenetur
+                            voluptate modi
                             a porro recusandae ducimus non? Unde asperiores eius molestias inventore aspernatur.</p>
                     </div>
                 </div>
@@ -123,26 +124,150 @@
 
                     <div>
                         <h2>Php</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio aliquid illo, odio corporis vitae 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio aliquid illo, odio
+                            corporis vitae
                             enim deserunt obcaecati saepe beatae ut ipsa aliquam autem. Nisi, exercitationem?</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Experience -->
+        <section class="experience">
+            <div>
+                <h1>My Experience</h1>
+                <h2>Sekolah</h2>
+                <h2>SMKN 1 DEPOK</h2>
+
+            </div>
+
+            <div class="pendidikan">
+                <img src="https://asset-2.tstatic.net/depok/foto/bank/images/Sekolah-Menengah-Kejuruan-Negeri-1-Depok-di-Kecamatan-Tapos-Kota-Depok.jpg"
+                    alt="">
+                <p>Saya bersekolah di smk negeri 1 depok pada tahun 2023 dengan memilih jurusan PPLG (Perancang
+                    Perangkat Lunak Dan Gim).
+                    Di tahun ini saya menginjak kelas 11. Di umur saya yang ke-17 tahun ini saya menjadi lebih produktif
+                    lagi terutama dalam mapel
+                    paling penting bagi saya yaitu produkti pplg. Di sekolah saat ini saya mempelajari bahasa JavaScript
+                    dan php. Sebenarnya saya juga belajar android studio
+                    menggunakan Java dan xml namun saya kurang tertarik dan lebih mengikuti minat dan bakat saya dalam
+                    pengembangan web berbasis Front-end</p>
+            </div>
+            <a href="https://www.instagram.com/officialsmkn1depok/?hl=en"> Tentang Sekolah Saya &raquo; </a>
+
+            <style>
+                .experience {
+                    padding: 125px 75px;
+                }
+
+                .experience h1 {
+                    font-weight: bold;
+                    font-size: 50px;
+                    text-align: center;
+                }
+
+                .experience h2 {
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+
+                .experience img {
+                    border-radius: 40px;
+                    margin-top: 70px;
+                    width: 570px;
+                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+                }
+
+                .experience a {
+                    margin-left: 62%;
+                    padding: 15px 10px;
+                    background-color: aqua;
+                    border-radius: 10px;
+                }
+
+                .pendidikan p {
+                    text-align: justify;
+                    width: 400px;
+                    font-size: 18px;
+                    gap: 20px;
+                }
+
+                .pendidikan {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+            </style>
+
+        </section>
+
         <!-- Contact -->
-        <section>
+        <section class="message">
             <header id="contact">
                 <h2>Message Me</h2>
             </header>
 
-            <!-- <div class="content"></div> -->
+            <div class="content">
+                <form action="" method="post">
+                    <p> Name</p>
+                    <input type="text" name="name" id="" placeholder="input your name....." required>
+                    <p> Email</p>
+                    <input type="email" name="email" id="" placeholder="input your email....." required>
+                    <p> Date</p>
+                    <input type="month" name="date" id="" placeholder="date">
+                    <p> Message</p>
+                    <textarea name="" id="" cols="60" rows="8"></textarea>
+                </form>
+                <input type="submit" value="Submit" class="submit">
+            </div>
+
+            <style>
+                .message {
+                    padding: 5%;
+                    background-color: burlywood;
+                }
+
+                .message h2 {
+                    text-align: center;
+                }
+
+                .message input,
+                textarea {
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+
+                .submit {
+                    cursor: pointer;
+                    border-radius: 5px;
+                    margin-left: -2px;
+                    margin-top: 10px;
+                }
+
+                .submit:hover {
+                    background-color: rgb(252, 232, 232);
+                    color: rgb(120, 62, 62);
+                }
+            </style>
         </section>
+
     </main>
+
+
 
     <!-- footer -->
     <footer>
         <p>&copy; 2025. All rights reserved.</p>
+        <style>
+            footer {
+                padding: 15px 15px;
+            }
+        </style>
     </footer>
 </body>
 
