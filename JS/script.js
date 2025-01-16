@@ -24,7 +24,7 @@
 //     document.getElementById('name').innerHTML = nama
 // })
 
-// fungsi buat nama
+// fungsi wat nama
 function validateForm() {
     const nama = document.forms['message-form']['name-input'].value
     const angka = 11
@@ -46,7 +46,7 @@ function setName(name) {
     document.getElementById('error-name').innerHTML = "";
 }
 
-//fungsi buat geser-geser foto
+//fungsi yg buat geser2 foto
 let slideIndex = 0; // Indeks slide dimulai dari 0
 
 const changeSlide = (n) => {
@@ -63,7 +63,7 @@ const showDivs = (n) => {
     imgList[slideIndex].style.display = "block"; // Tampilkan gambar aktif
 };
 
-// Inisialisasi untuk menampilkan gambar pertama
+// Inisialisasi untuk menampilkan gmbar pertama
 document.addEventListener("DOMContentLoaded", () => {
     showDivs(slideIndex);
 });
@@ -71,4 +71,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // Slideshow otomatis
 setInterval(() => {
     changeSlide(1);
-}, 3000); // Ganti setiap 3 detik
+}, 3000); // Ganti setiap 3 dtk
+
+
+// anu script buat yang message me nyah
+function validateContactForm() {
+    const form = document.forms["contact-form"];
+    const name = form["full-name"].value;
+    const birthDate = form["birth-date"].value;
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const message = form["message"].value;
+
+    if (!name || !birthDate || !gender || !message) {
+        document.getElementById("error").innerHTML = "Mohon isi semua form";
+        return false;
+    }
+
+    console.log(`Name: ${name}, DOB: ${birthDate}, Gender: ${gender.value}, Message: ${message}`);
+
+    return false;
+}
+

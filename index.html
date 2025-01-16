@@ -10,18 +10,22 @@
 </head>
 
 <body>
-    <!-- logo & nav -->
+    <!-- logo dan navigasi -->
     <header class="main-header">
-        <a href="#"><img src="https://media.stickerswiki.app/ucokmauayang/606365.512.webp" style="width: 50px; border-radius:50% ;" class="logo" alt=""></a>
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#about-me">My Profile</a>
-            <a href="#portofolio">Portofolio</a>
-            <a href="#contact">Message Us</a>
+        <!-- logo -->
+        <div class="logo-icon"></div>
+
+        <!-- navigation -->
+        <nav>
+            <button><a href="" class="left-rounded">Home</a></button>
+            <button><a href="#about-me">About Me</a></button>
+            <button><a href="#portofolio">Portofolio</a></button>
+            <button><a href="#experience">Experience</a></button>
+            <button><a href="#contact" class="right-rounded">Message Me</a></button>
         </nav>
     </header>
 
-    <hr>
+    
 
     <!-- content -->
     <main>
@@ -123,7 +127,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/128/1/1975.png" alt="">
 
                     <div>
-                        <h2>Php</h2>
+                        <h2>PHP</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio aliquid illo, odio
                             corporis vitae
                             enim deserunt obcaecati saepe beatae ut ipsa aliquam autem. Nisi, exercitationem?</p>
@@ -206,56 +210,115 @@
         <!-- Contact -->
         <section class="message">
             <header id="contact">
-                <h2>Message Me</h2>
+                <h2>Message Me ☎</h2>
             </header>
 
             <div class="content">
-                <form action="" method="post">
-                    <p> Name</p>
-                    <input type="text" name="name" id="" placeholder="input your name....." required>
-                    <p> Email</p>
-                    <input type="email" name="email" id="" placeholder="input your email....." required>
-                    <p> Date</p>
-                    <input type="month" name="date" id="" placeholder="date">
-                    <p> Message</p>
-                    <textarea name="" id="" cols="60" rows="8"></textarea>
+                <form name="contact-form" onsubmit="return validateContactForm()">
+                    Name:
+                    <input type="text" name="full-name" placeholder="Full Name">
+                    <br>
+
+                    Date of Birth:
+                    <input type="date" name="birth-date">
+                    <br>
+
+                    <label>Gender:</label>
+                    <div class="gender-group">
+                        <div>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Male</label>
+                        </div>
+
+                        <div style="margin-left: 25rem;">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+
+                    Message:
+                    <textarea name="message" placeholder="Enter your message"></textarea>
+                    <br>
+
+                    <div id="error" style="color: red;"></div>
+                    <input type="submit" value="Submit" class="submit">
                 </form>
-                <input type="submit" value="Submit" class="submit">
             </div>
 
             <style>
                 .message {
-                    padding: 5%;
-                    background-color: burlywood;
+                    padding: 100px 75px;
+                    text-align: center;
+                    background-color: #f8f8f8;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    max-width: 600px;
+                    margin: 50px auto;
                 }
 
-                .message h2 {
-                    text-align: center;
+                .message header h2 {
+                    font-size: 32px;
+                    color: #333;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                .message .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .message form {
+                    width: 100%;
+                    max-width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
                 }
 
                 .message input,
-                textarea {
+                .message textarea {
+                    width: 100%;
                     padding: 10px;
-                    border-radius: 5px;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    font-size: 16px;
                 }
 
+                .message textarea {
+                    resize: none;
+                    height: 100px;
+                }
 
-                .submit {
+                .gender-group {
+                    display: flex;
+                }
+
+                .message label {
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                .message .submit {
+                    background-color: #4CAF50;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 8px;
                     cursor: pointer;
-                    border-radius: 5px;
-                    margin-left: -2px;
-                    margin-top: 10px;
+                    transition: 0.3s;
                 }
 
-                .submit:hover {
-                    background-color: rgb(252, 232, 232);
-                    color: rgb(120, 62, 62);
+                .message .submit:hover {
+                    background-color: #45a049;
                 }
             </style>
+                  
         </section>
-
     </main>
 
 
