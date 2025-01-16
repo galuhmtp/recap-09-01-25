@@ -13,16 +13,16 @@
 
 
 // pakai kode baris ini, jika ingin disambut alert dulu baru output web nya
-// let name = prompt("siapakah anda?", "");
-// document.getElementById("name").innerHTML = name
+let name = prompt("siapakah anda?", "");
+document.getElementById("name").innerHTML = name
 
-// let nameinput = document.getElementById('name-input')
+let nameinput = document.getElementById('name-input')
 
-// document.getElementById('submit').addEventListener("click" , function() {
-//     const nama = nameinput.value
+document.getElementById('submit').addEventListener("click" , function() {
+    const nama = nameinput.value
 
-//     document.getElementById('name').innerHTML = nama
-// })
+    document.getElementById('name').innerHTML = nama
+})
 
 // fungsi wat nama
 function validateForm() {
